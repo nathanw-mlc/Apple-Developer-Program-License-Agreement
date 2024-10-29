@@ -22,6 +22,8 @@ Whenever capitalized in this Agreement:
 
 “Agreement” means this Apple Developer Program License Agreement, including any attachments, Schedule 1 and any exhibits thereto which are hereby incorporated by this reference. For clarity, this Agreement supersedes the iOS Developer Program License Agreement (including any attachments, Schedule 1 and any exhibits thereto), the Safari Extensions Digital Signing Agreement, the Safari Extensions Gallery Submission Agreement, and the Mac Developer Program License Agreement.
 
+“App Intents” means the Documented APIs that allow Your Application to access app intent domains and other related functionality, and to expose app intents, app shortcuts, app entities, donations, and other related implementations.
+
 “App Store” means an electronic store and its storefronts branded, owned, and/or controlled by Apple, or an Apple Subsidiary or other affiliate of Apple, through which Licensed Applications may be acquired. An App Store exists for each of the following: iOS, iPadOS, macOS, tvOS, visionOS, and watchOS.
 
 “App Store Connect” means Apple’s proprietary online content management tool for Applications.
@@ -38,7 +40,7 @@ Whenever capitalized in this Agreement:
 
 “Apple Music Feed Content” means the previews of album art, songs and music videos provided by Apple and rendered through the Apple Music Feed API.
 
-“Apple Pay APIs” means the Documented APIs that enable end-users to send payment information they have stored on a supported Apple-branded product to an Application to be used in payment transactions made by or through the Application, and includes other payment-related functionality as described in the Documentation.
+“Apple Pay APIs” means the Documented APIs that enable end-users to send payment information they have stored on a supported Apple-branded product to an Application or Corresponding Product to be used in payment transactions made by or through the Application or Corresponding Product, and includes other payment-related functionality as described in the Documentation.
 
 “Apple Pay Payload” means a customer data package passed through the Apple Software and Apple Pay APIs as part of a payment transaction (e.g., name, email, billing address, shipping address, and device account number).
 
@@ -77,6 +79,8 @@ Whenever capitalized in this Agreement:
 “Corresponding Product” means Your website, web application, or other version of Your software application.
 
 “Covered Products” means Your Applications, Libraries, Passes, Safari Extensions, Safari Push Notifications, and/or FPS implementations developed under this Agreement.
+
+“Critical Messaging API” means the Documented API that enables Your Application to send messages via SMS for critical situations.
 
 “Custom App Distribution” means the store or storefront functionality that enables users to obtain Licensed Applications through the use of Apple Business Manager, Apple School Manager, or as otherwise permitted by Apple.
 
@@ -122,7 +126,7 @@ Whenever capitalized in this Agreement:
 
 “In-App Purchase API” means the Documented API that enables additional content, functionality or services to be delivered or made available for use within an Application with or without an additional fee.
 
-“Intermediary Party” means a party that: (a) passes an Apple Pay end-user’s Apple Pay Payload to a Merchant for processing such end-user’s payment transaction outside of an Application, or (b) develops and makes available an Application to enable Merchants to conduct Tap to Pay transactions.
+“Intermediary Party” means a party that: (a) passes an Apple Pay end-user’s Apple Pay Payload to a Merchant for processing such end-user’s payment transaction outside of an Application or Corresponding Product, or (b) develops and makes available an Application to enable Merchants to conduct Tap to Pay transactions.
 
 “iOS” means the iOS operating system software provided by Apple for use by You only in connection with Your Application development and testing, including any successor versions thereof.
 
@@ -443,12 +447,12 @@ Your Application must not access the HomeKit APIs unless it is primarily designe
 
 Your Application may use information obtained from the HomeKit APIs and/or the HomeKit Database only on a compatible Apple-branded product and may not export, remotely access or transfer such information off of the applicable product (e.g., a lock password cannot be sent off an end-user’s device to be stored in an external non-Apple database), unless otherwise expressly permitted by Apple in the Documentation; and
 Notwithstanding anything to the contrary in Section 3.3.3(B), You and Your Application may not use the HomeKit APIs, or any information obtained through the HomeKit APIs or through the HomeKit Database, for any purpose other than providing or improving home configuration or home automation services in connection with Your Application (e.g., not for serving advertising).
-J. SiriKit
-(i) Your Application may register as a destination to use the Apple-defined SiriKit domains, but only if Your Application is designed to provide relevant responses to a user, or otherwise carry out the user’s request or intent, in connection with the applicable SiriKit domain (e.g., ride sharing) that is supported by Your Application and this usage is clearly evident in Your marketing text and user interface. In addition, Your Application may contribute actions to SiriKit, but only if such actions are tied to user behavior or activity within Your Application and for which You can provide a relevant response to the user. You agree not to submit false information through SiriKit about any such user activity or behavior or otherwise interfere with the predictions provided by SiriKit (e.g., SiriKit donations should be based on actual user behavior).
+J. App Intents and SiriKit
+(i) Your Application may register as a destination to use the Apple-defined app intent and/or SiriKit domains, but only if Your Application is designed to provide relevant responses to a user, or otherwise carry out the user’s request or intent, in connection with the applicable app intent domain (e.g., mail, photos) or SiriKit domain (e.g., ride sharing) that is respectively supported by Your Application, and this usage is clearly evident in Your marketing text and user interface. In addition, Your Application may contribute actions to App Intents and/or SiriKit, but only if such actions are tied to user behavior or activity within Your Application and for which You can provide a relevant response to the user or complete the user’s response. You agree not to submit false information using App Intents or SiriKit about any such user activity or behavior or otherwise interfere with Apple Software or Services.
 
-(ii) Your Application may use information obtained through SiriKit only on supported Apple products and may not export, remotely access or transfer such information off a device except to the extent necessary to provide or improve relevant responses to a user or carry out a user’s request or in connection with Your Application. Notwithstanding anything to the contrary in Section 3.3.3(B), You and Your Application may not use SiriKit, or any information obtained through SiriKit, for any purpose other than providing relevant responses to a user or otherwise carrying out a user’s request or intent in connection with an SiriKit domain, intent, or action supported by Your Application and/or for improving Your Application’s responsiveness to user requests (e.g., not for serving advertising).
+(ii) Your Application may use information obtained through App Intents and/or SiriKit only on supported Apple products and may not export, remotely access or transfer such information off a device except to the extent necessary to provide or improve relevant responses to a user or carry out a user’s request or in connection with Your Application. Notwithstanding anything to the contrary in Section 3.3.3(B), You and Your Application may not use App Intents and/or SiriKit, or any information obtained through App Intents and/or SiriKit, for any purpose other than providing relevant responses to a user or otherwise carrying out a user’s request or intent in connection with a SiriKit domain, app intent domain, intent, or action supported by Your Application and/or for improving Your Application’s responsiveness to user requests (e.g., not for serving advertising).
 
-(iii) If Your Application uses SiriKit to enable audio data to be processed by Apple, You agree to clearly disclose to end-users that You and Your Application will be sending their recorded audio data to Apple for speech recognition, processing and/or transcription purposes, and that such audio data may be used to improve and provide Apple products and services. You further agree to use such audio data, and recognized text that may be returned from SiriKit, only as expressly consented to by the end-user and as expressly permitted herein.
+(iii) If Your Application uses App Intents and/or SiriKit to enable audio data to be processed by Apple, You agree to clearly disclose to end-users that You and Your Application will be sending their recorded audio data to Apple for speech recognition, processing and/or transcription purposes, and that such audio data may be used to improve and provide Apple products and services. You further agree to use such audio data, and recognized text that may be returned from App Intents and/or SiriKit, only as expressly consented to by the end-user and as expressly permitted herein.
 
 K. Address Book
 If Your Application accesses data from an end-user’s Address Book through the Address Book API, You must notify and obtain consent from the user before a user’s Address Book data is accessed or used by Your Application. Further, Your Application may not provide an automated mechanism that transfers only the Facebook Data portions of the end-user’s Address Book altogether to a location off of the end-user’s device. For the sake of clarity, this does not prohibit an automated transfer of the user’s entire Address Book as a whole, so long as user notification and consent requirements have been fulfilled; and does not prohibit enabling users to transfer any portion of their Address Book data manually (e.g., by cutting and pasting) or enabling them to individually select particular data items to be transferred.
@@ -506,11 +510,9 @@ You may not share, sell, transfer or disclose Roster Data to any third parties (
 C. Sign in with Apple; Sign in with Apple at Work & School
 You may use Sign in with Apple or Sign in with Apple at Work & School in Your Corresponding Products only so long as Your use is comparable to including Sign in with Apple or Sign in with Apple at Work & School, respectively, in Your Application. You may not share or sell user data obtained through Sign in with Apple or Sign in with Apple at Work & School to advertising platforms, data brokers, or information resellers.
 
-If a Sign in with Apple user has chosen to anonymize their user data as part of Sign in with Apple, You agree not to attempt to link such anonymized data with information that directly identifies the individual and that is obtained outside of Sign in with Apple without first obtaining user consent.
+If a Sign in with Apple user has chosen to anonymize their user data as part of Sign in with Apple, You agree not to attempt to link such anonymized data with information that directly identifies the individual and that is obtained outside of Sign in with Apple without first obtaining user consent. You must process the data You receive from Sign in with Apple at Work & School solely in accordance with the instructions of the organization’s IT administrator.
 
-You must process the data You receive from Sign in with Apple at Work & School solely in accordance with the instructions of the organization’s IT administrator.
-
-For purposes of this Section 3.3.5(C) only, Your Corresponding Products must have the same title and substantially equivalent features and functionality as Your Licensed Application.
+For purposes of this Section 3.3.5(C) only, Your Corresponding Products must have the same title and substantially equivalent features and functionality as Your Licensed Application. You agree to follow the Usage Guidelines for Websites and Other Platforms for using Sign in with Apple in Your Corresponding Products. For the purposes of this Agreement, the meaning of “website or app” in the Usage Guidelines for Websites and Other Platforms includes Your Corresponding Products that use the Sign in with Apple APIs.
 
 D. Mobile Device Management
 All use of MDM must be in accordance with the terms of this Agreement (including the Program Requirements) and Attachment 10 (Additional Terms for the use of MDM).
@@ -544,7 +546,7 @@ You may use MusicKit JS only as a stand-alone library in Your Application, websi
 E. ShazamKit
 All use of the ShazamKit APIs must be in accordance with the terms of this Agreement (including the Apple Music Identity Guidelines and Program Requirements) and the Documentation. If You choose to display ShazamKit Content corresponding to songs available on Apple Music, then You must provide a link to the respective content within Apple Music in accordance with the Apple Music Identity Guidelines. Except to the extent expressly permitted herein, You agree not to copy, modify, translate, create a derivative work of, publish or publicly display ShazamKit Content in any way. Further, You may not use or compare the data provided by the ShazamKit APIs for the purpose of improving or creating another audio recognition service. Applications that use the ShazamKit APIs may not be designed or marketed for compliance purposes (e.g., music licensing and royalty auditing).
 
-F. Apple Music Feed
+F. Apple Music Feed API
 All use of the Apple Music Feed API must be in accordance with the terms of this Agreement (including the Apple Music Identity Guidelines and Program Requirements) and the Documentation. You may display Apple Music Feed Content for the purposes of promoting the subject of the Apple Music Feed Content in Your Application, provided that such content (i) is placed only on screens that promote the content on which the Apple Music Feed Content is based; (ii) is proximate to a badge for Apple Music that acts as a link directly to pages within Apple Music or iTunes where consumers can access the promoted music; (iii) includes attribution indicating the Apple Music Feed Content was “provided courtesy of Apple Music” if such Apple Music Feed Content includes song or music video previews; (iv) is streamed only, and not downloaded, saved, cached, or synchronized with video, if such Apple Music Feed Content includes song or music video previews; (v) is not used for independent entertainment value apart from its promotional purpose; and (vi) is not used to promote any other goods or services.
 
 3.3.7 Infrastructure Technologies
@@ -596,7 +598,10 @@ E. Shallow Depth & Pressure
 Your Application may use the Shallow Depth & Pressure feature to provide depth data to users for use only in shallow water activities (e.g., pool swimming, snorkeling) and may not be used in a scuba-diving app or for water activities involving submersion below the shallow depth limit set forth in the Documentation. Your Application may only surface depth data to users up to the limit set forth in the Documentation.
 
 F. Now Playing APIs
-By using the Now Playing APIs, You understand that Your Licensed Application Information, associated metadata, trademarks and logos associated with Your Application, and content or information You make available through the Now Playing API, (“Now Playing Information”) may be accessible through the Journaling Suggestions API. You agree that, unless You flag it for exclusion, the Now Playing Information may be used and displayed in connection with providing journaling suggestions to end users through the Journaling Suggestions API, including by other developers and their applications.
+By using the Now Playing APIs, You understand that Your Licensed Application Information, associated metadata, trademarks and logos associated with Your Application, and content or information You make available through the Now Playing API (“Now Playing Information”), may be accessible through the Journaling Suggestions API. You agree that, unless You flag it for exclusion, the Now Playing Information may be used and displayed in connection with providing journaling suggestions to end users through the Journaling Suggestions API, including by other developers and their applications.
+
+G. Critical Messaging API
+Your Application may use the Critical Messaging API only to access messaging capabilities via SMS for critical situations. You may not use the Critical Messaging API for sending unsolicited messages or for phishing or spamming, including but not limited to engaging in any types of activities that violate anti-spamming laws and regulations, or that are otherwise improper, inappropriate, or illegal. Apple does not guarantee the availability, accuracy, reliability, or timeliness of messages transmitted using the Critical Messaging API.
 
 3.3.9 Transactions and Passes
 A. In-App Purchase API
@@ -632,6 +637,8 @@ If You are displaying the Merchant web page that facilitates an Apple Pay end-us
 
 (b) You agree not to use information that is derived from or relates to the Apple Pay payment transaction for purposes other than displaying the Merchant web page.
 
+If You use the Apple Pay APIs in Your Corresponding Products, then You agree to follow the Acceptable Use Guidelines for Apple Pay on the Web, the applicable Apple Pay Platform Web Terms and Conditions, and related agreements. For the purposes of this Agreement, when You use the Apple Pay APIs in Your Corresponding Products, the meaning of “website” in the Acceptable Use Guidelines for Apple Pay on the Web and “Website” in the Apple Pay Platform Web Terms and Conditions and related agreements, includes Your Corresponding Products that use the Apple Pay APIs to facilitate transactions.
+For this Section 3.3.9(C) only, “Apple” means Apple Payments Services LLC, located at 6900 W. Parmer Lane, Office No. AC1-2225, Austin, Texas, if You are located in the United States.
 D. Tap to Pay APIs
 (i) Your Application may use the Tap to Pay APIs solely for the purpose of enabling Merchants to conduct transactions through Your Application, and Your Application must not access the Tap to Pay APIs unless You have received an entitlement from Apple for such access. In addition, You acknowledge and agree to the following:
 
@@ -929,16 +936,16 @@ Attachment 2
 Additional Terms for Use of the In-App Purchase API
 
 1. Use of the In-App Purchase API
-1.1 You may use the In-App Purchase API only to enable end-users to access or receive content, functionality, or services that You make available for use within Your Application (e.g., digital books, additional game levels, access to a turn-by-turn map service). You may not use the In-App Purchase API to offer goods or services to be used outside of Your Application.
+1.1 You may use the In-App Purchase API only to enable end-users to access or receive content, functionality, or services that You make available for use within Your Application (e.g., digital books, additional game levels, access to a turn-by-turn map service). You may not use the In-App Purchase API to offer goods or services to be used exclusively outside of Your Application.
 
 1.2 You must submit to Apple for review and approval all content, functionality, or services that You plan to provide through the use of the In-App Purchase API in accordance with these terms and the processes set forth in Section 6 (Application Submission and Selection) of the Agreement. For all submissions, You must provide the name, text description, price, unique identifier number, and other information that Apple reasonably requests (collectively, the “Submission Description”). Apple reserves the right to review the actual content, functionality or service that has been described in the Submission Descriptions at any time, including, but not limited to, in the submission process and after approval of the Submission Description by Apple. If You would like to provide additional content, functionality or services through the In-App Purchase API that are not described in Your Submission Description, then You must first submit a new or updated Submission Description for review and approval by Apple prior to making such items available through the use of the In-App Purchase API. Apple reserves the right to withdraw its approval of content, functionality, or services previously approved, and You agree to stop making any such content, functionality, or services available for use within Your Application.
 
 1.3 All content, functionality, and services offered through the In-App Purchase API are subject to the Program Requirements for Applications, and after such content, services or functionality are added to a Licensed Application, they will be deemed part of the Licensed Application and will be subject to all the same obligations and requirements. For clarity, Applications that provide keyboard extension functionality may not use the In-App Purchase API within the keyboard extension itself; however, they may continue to use the In-App Purchase API in separate areas of the Application.
 
 2. Additional Restrictions
-2.1 You may not use the In-App Purchase API to enable an end-user to set up a pre-paid account to be used for subsequent purchases of content, functionality, or services, or otherwise create balances or credits that end-users can redeem or use to make purchases at a later time.
+2.1 You may not use the In-App Purchase API to enable an end-user to set up a pre-paid account to be used for subsequent purchases of content, functionality, or services for use exclusively outside of Your Application, or otherwise create balances or credits that end-users can redeem or use to make such purchases at a later time.
 
-2.2 You may not enable end-users to purchase Currency of any kind through the In-App Purchase API, including but not limited to any Currency for exchange, gifting, redemption, transfer, trading or use in purchasing or obtaining anything within or outside of Your Application. “Currency” means any form of currency, points, credits, resources, content or other items or units recognized by a group of individuals or entities as representing a particular value and that can be transferred or circulated as a medium of exchange.
+2.2 You may not enable end-users to purchase Currency of any kind through the In-App Purchase API, including but not limited to any Currency for exchange, gifting, redemption, transfer, trading or use in purchasing or obtaining anything within or outside of Your Application. “Currency” means any form of currency, points, credits, resources, content or other items or units recognized by a group of individuals or entities as representing a particular value and that can be transferred or circulated as a medium of exchange for physical goods or services, or financial services or holdings.
 
 2.3 Content and services may be offered through the In-App Purchase API on a subscription basis (e.g., subscriptions to newspapers and magazines). Other than specific approved rental content such as films, television programs, music, books, rentals of content, services or functionality through the In-App Purchase API are not allowed (e.g., use of particular content may not be restricted to a pre-determined, limited period of time).
 
@@ -1469,19 +1476,13 @@ Belgium*
 
 Benin
 
-Bhutan
-
 Bosnia and Herzegovina
 
 Botswana
 
-Brunei
-
 Bulgaria*
 
 Burkina-Faso
-
-Cambodia
 
 Cameroon
 
@@ -1499,7 +1500,20 @@ Cote d’Ivoire
 
 Croatia
 
-Cyprus* Czech Republic Denmark* Egypt* Estonia* Fiji Finland* France*	
+Cyprus*
+
+Czech Republic
+
+Denmark*
+
+Egypt*
+
+Estonia*
+
+Finland*
+
+France*
+
 Gabon
 
 Gambia
@@ -1538,15 +1552,11 @@ Kazakhstan
 
 Kenya
 
-Korea*
-
 Kosovo
 
 Kuwait
 
 Kyrgyzstan
-
-Laos
 
 Latvia*
 
@@ -1560,8 +1570,6 @@ Lithuania*
 
 Luxembourg*
 
-Macau
-
 Macedonia
 
 Madagascar
@@ -1569,8 +1577,6 @@ Madagascar
 Malawi
 
 Malaysia*
-
-Maldives
 
 Mali
 
@@ -1580,11 +1586,7 @@ Mauritania
 
 Mauritius
 
-Micronesia, Fed States of
-
 Moldova
-
-Mongolia
 
 Montenegro
 
@@ -1592,13 +1594,7 @@ Morocco
 
 Mozambique
 
-Myanmar
-
 Namibia
-
-Nauru
-
-Nepal
 
 Netherlands*
 
@@ -1611,10 +1607,6 @@ Norway*
 Oman
 
 Pakistan
-
-Palau
-
-Papua New Guinea
 
 Philippines*
 
@@ -1648,13 +1640,9 @@ Slovakia*
 
 Slovenia*
 
-Solomon Islands
-
 South Africa
 
 Spain*
-
-Sri Lanka
 
 Swaziland
 
@@ -1669,8 +1657,6 @@ Tajikistan
 Tanzania
 
 Thailand*
-
-Tonga
 
 Tunisia
 
@@ -1688,8 +1674,6 @@ United Kingdom*
 
 Uzbekistan
 
-Vanuatu
-
 Vietnam*
 
 Yemen
@@ -1697,6 +1681,46 @@ Yemen
 Zambia
 
 Zimbabwe
+
+You appoint Apple Services Pte. Ltd. as Your commissionaire for the marketing and End-User download of the Licensed and Custom Applications by End-Users located in the regions identified below, as updated from time to time via the App Store Connect site:
+
+Bhutan
+
+Brunei
+
+Cambodia
+
+Laos
+
+Macau
+
+Maldives
+
+Micronesia, Fed States of
+
+Mongolia
+
+Myanmar
+
+Nepal
+
+Palau
+
+Sri Lanka
+
+Korea*
+
+Fiji
+
+Nauru
+
+Papua New Guinea
+
+Solomon Islands
+
+Tonga
+
+Vanuatu
 
 *Custom Applications are only available in these regions.
 
@@ -1847,8 +1871,8 @@ EC4Y 1EU
 United Kingdom
 https://www.cedr.com/p2bmediation/
 
-LYL172
-June 10, 2024
+LYL194
+October 23, 2024
 
 Schedule 2
 1. Appointment of Agent and Commissionaire
@@ -1868,7 +1892,7 @@ Schedule 2
 
 (c) make copies of, format, and otherwise prepare Licensed Applications for acquisition and download by End-Users, including adding the Security Solution and other optimizations identified in the Agreement;
 
-(d) allow or, in the case of cross-border assignments of Volume Content purchases, arrange for End- Users to access and re-access copies of the Licensed Applications, so that End-Users may acquire and electronically download those Licensed Applications developed by You, Licensed Application Information, and associated metadata through one or more App Stores. In addition, You hereby authorize distribution of Your Licensed Applications under this Schedule 2 for use by: (i) multiple End-Users when the Licensed Application is purchased by an individual account associated with other family members via Family Sharing, including at Your election as indicated in the App Store Connect tool, purchases made prior to the execution of this Schedule 2; (ii) eligible Legacy Contacts of an End-User to access Your Licensed Application along with associated information and metadata stored in iCloud as described in https://support.apple.com/kb/HT212360; and (iii) a single institutional customer via the Volume Content Service for use by its End-Users and/or for installation on devices with no associated Apple Accounts that are owned or controlled by that institutional customer in accordance with the Volume Content Terms, conditions, and program requirements;
+(d) allow or, in the case of cross-border assignments of certain purchases, arrange for end-users to access and re-access copies of the Licensed Applications, so that end-users may acquire from You and electronically download those Licensed Applications, Licensed Application Information, and associated metadata through one or more App Stores or the Custom App Distribution Site. In addition, You hereby authorize distribution of Your Licensed Applications under this Schedule 1 for use by: (i) end-users with accounts associated with another end-user’s account via Family Sharing; (ii) eligible Legacy Contacts of an end-user to access Your Licensed Application along with associated information and metadata stored in iCloud as described in https://support.apple.com/kb/HT212360; (iii) multiple end users under a single Apple Account when the Licensed Application is provided to such end-users through Apple Configurator in accordance with the Apple Configurator software license agreement; and (iv) a single institutional customer via Custom App Distribution for use by its end-users and/or for installation on devices with no associated Apple Accounts that are owned or controlled by that institutional customer in accordance with the Volume Content Terms, conditions, and program requirements;
 
 (e) issue invoices for the purchase price payable by End-Users for the Licensed Applications;
 
@@ -2230,10 +2254,8 @@ Bahrain*
 Belarus
 Belgium*
 Benin
-Bhutan
 Bosnia and Herzegovina
 Botswana
-Brunei
 Bulgaria*
 Burkina-Faso
 Cambodia
@@ -2248,10 +2270,9 @@ Croatia
 Cyprus*
 Czech Republic
 Denmark*
-Egypt*
-Estonia*
-Fiji
-Finland*	France*
+Egypt*	Estonia*
+Finland*
+France*
 Gabon
 Gambia
 Georgia
@@ -2271,44 +2292,33 @@ Italy*
 Jordan
 Kazakhstan
 Kenya
-Korea*
 Kosovo
 Kuwait
 Kyrgyzstan
-Laos
 Latvia*
 Lebanon
 Liberia
 Libya
-Lithuania*
-Luxembourg*
-Macau
+Lithuania*	Luxembourg*
 Macedonia
 Madagascar
-Malawi	Malaysia*
-Maldives
+Malawi
+Malaysia*
 Mali
 Malta, Republic of*
 Mauritania
 Mauritius
-Micronesia, Fed States of
 Moldova
-Mongolia
 Montenegro
 Morocco
 Mozambique
-Myanmar
 Namibia
-Nauru
-Nepal
 Netherlands*
 Niger
 Nigeria
 Norway*
 Oman
 Pakistan
-Palau
-Papua New Guinea
 Philippines*
 Poland
 Portugal
@@ -2324,10 +2334,8 @@ Sierra Leone
 Singapore*
 Slovakia*
 Slovenia*
-Solomon Islands
 South Africa
 Spain*
-Sri Lanka
 Swaziland
 Sweden*
 Switzerland*
@@ -2335,7 +2343,6 @@ Taiwan*
 Tajikistan
 Tanzania
 Thailand*
-Tonga
 Tunisia
 Türkiye*
 Turkmenistan
@@ -2344,11 +2351,28 @@ Uganda
 Ukraine*
 United Kingdom*
 Uzbekistan
-Vanuatu
 Vietnam*
 Yemen
 Zambia
 Zimbabwe
+You appoint Apple Services Pte. Ltd. as Your commissionaire for the marketing and End-User download of the Licensed and Custom Applications by End-Users located in the regions identified below, as updated from time to time via the App Store Connect site:
+
+Bhutan
+Brunei
+Cambodia
+Laos
+Macau	Maldives
+Micronesia, Fed States of
+Mongolia
+Myanmar
+Nepal	Palau
+Sri Lanka
+Korea*
+Fiji
+Nauru	Papua New Guinea
+Solomon Islands
+Tonga
+Vanuatu
 *Custom Applications are only available in these regions.
 
 EXHIBIT B
@@ -2391,7 +2415,7 @@ Indonesia**
 Ireland
 Italy
 Ivory Coast
-Kazakhstan
+Kazakhstan**
 Kenya
 Korea**
 Kosovo
@@ -2403,7 +2427,7 @@ Malaysia
 Malta, Republic of
 Mexico****
 Moldova
-Nepal
+Nepal**
 Netherlands
 New Zealand
 Nigeria
@@ -2583,11 +2607,11 @@ If You are a resident of Korea and You appoint Apple Distribution International 
 
 You must update Your account with Your respective Korean Tax ID when prompted in App Store Connect. You acknowledge that by not providing Your respective Korean Tax ID, Your Licensed or Custom Applications may be removed from the Korean Store or Your remittance payment under section 3.5 of Schedule 2 and section 3.5 of Schedule 3 may not be made for Your applicable Licensed or Custom Applications until such time as Your Korean Tax ID is provided.
 
-At Apple Distribution International Ltd.’s request, You will provide Apple with satisfactory evidence of Your Korean Tax ID (e.g., business registration certificate or print-out from the Korean National Tax Service's Home Tax website). You warrant that You will notify Apple if You cease to hold a valid Korean Tax ID.
+At Apple’s request, You will provide Apple with satisfactory evidence of Your Korean Tax ID (e.g., business registration certificate or print-out from the Korean National Tax Service's Home Tax website). You warrant that You will notify Apple if You cease to hold a valid Korean Tax ID.
 
 In order to comply with Apple’s obligations under applicable law to validate Your Korean Tax ID, Apple will use a service provider to complete the validation process and will transfer Your Korean Tax ID to our service provider for such purpose. Any personal data collected by Apple will be treated in accordance with Apple’s Privacy Policy which can be viewed at http://www.apple.com/legal/privacy.
 
-If You do not provide a valid Korean Tax ID to Apple, Apple reserves the right to charge Korean VAT on any services provided to You under this Agreement.
+Pursuant to Korean tax regulations, Apple will apply Korean VAT on the commission payable by You to Apple to be deducted from Your remittance with respect to Your sales to Korean customers.
 
 7. MALAYSIA
 
@@ -2659,7 +2683,9 @@ Singapore Developers – Delivery of Licensed and Custom Applications to End-Use
 
 If You are a resident of Singapore and You appoint Apple as Your agent or commissionaire to deliver Licensed and Custom Applications to End-Users and Custom App Distribution Customers in the jurisdictions specified in Exhibit A, it is a condition of Schedule 2 and Schedule 3 that You confirm to Apple whether You are registered for Singapore GST. If You are registered for GST, You are required to provide Your Singapore GST registration number upon request.
 
-If You are not registered for Singapore GST or do not provided Your Singapore GST registration number to Apple, pursuant to Singapore tax regulations, Apple will apply Singapore GST on the commission payable by You to Apple to be deducted from Your remittance.
+If You are not registered for Singapore GST or do not provide Your Singapore GST registration number to Apple, pursuant to Singapore tax regulations, Apple will apply Singapore GST on the commission payable by You to Apple to be deducted from Your remittance.
+
+If You are registered for Singapore GST and have provided Your Singapore GST registration number to Apple, pursuant to Singapore tax regulations, Apple will apply Singapore GST on the commissions payable by You to Apple to be deducted from Your remittance with respect to Your sales to customers based in the countries and regions where You Appoint Apple Services Pte. Ltd. as Your commissionaire.
 
 11. TAIWAN
 
